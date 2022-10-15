@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+/*Lado del historial*/
+#izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background: rgb(0,212,255);
+  background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(157,147,157,1) 50%, rgba(255,0,0,1) 100%);
+  border: 1px solid;
+}
+
+.tex{
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+}
+
+#Historial {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+/*Lado del juego*/
+#derecha {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(157,147,157,1) 50%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+#resultado{
+    padding-top: 55px;
+    font-size: 40px;
+}
+
+
+
+#JuegoC {
+  height: 100%;
+  width: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Arriba{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+button {
+  padding-top: 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  padding-left: 6px;
+}
+
+.boton:hover {
+  font-size: 60px;
+}
+
+h3{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+body{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#derecha{
+    height: 400px;
+}
+
+#izquierda{
+    padding-top: 5px;
+    height: 250px;
+}
+
+#JuegoC {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    gap: 50px;
+  }
+
+  #resultado{
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
